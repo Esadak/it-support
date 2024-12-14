@@ -67,6 +67,21 @@ header {
 
 .hero-content {
     max-width: 50%; /* Limit the width of the text content */
+    margin-top: -140px;
+    margin-left: -78px;
+    padding-top: 200px;
+}
+h2{
+    font-size: 60px;
+    color: #fca311;
+    
+}
+p{
+    margin-top: 19px;
+    font-size: 20px;
+}
+.cta{
+    color: #fca311;
 }
 
 .hero-gif img {
