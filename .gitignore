@@ -7,3 +7,43 @@ __pycache__/
 
 # Ignore static files
 /static/images/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+*.egg-info/
+dist/
+build/
+
+# Flask
+instance/
+.webassets-cache
+*.db
+*.sqlite3
+
+# HTML/JavaScript
+node_modules/
+*.log
+*.min.js
+*.map
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Operating System files
+.DS_Store
+Thumbs.db
+
+# Environment Variables
+.env

@@ -1,66 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flex-IT - IT Solutions</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
-</head>
-<body>
-    <header>
-        <h1 class="it-logo">IT-Fixarna</h1>
-        <nav>
-            <div class="nav-content">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="https://ezatakbari.netlify.app/">Portfolio</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact Us</a></li>
-            </div>
-        </nav>
-    </header>
-    <section class="hero">
-        <div class="hero-content">
-            <h2>Providing The Best Services & IT Solutions</h2>
-            <p>Supporttekniker erbjuder hjälp till kunder som har problem med hårdvara eller programvara. 
-                De ger vägledning via telefon, e-post eller fjärrsupport för att lösa användarens problem snabbt och effektivt..</p>
-            <a href="#" class="cta">Start Now</a>
-        </div>
-        <div class="hero-gif">
-            <img src="https://i.gifer.com/AGzF.gif" alt="Hero GIF">
-        </div>
-    </section>
-    <section class="sections">
-        <div class="section">
-            <img src="{{ url_for('static', filename='images/Business.jpg') }}" alt="Business Growth">
-            <h3>Systemadministration</h3>
-            <p>Dessa tekniker hanterar servrar och arbetsstationer, installerar programvara och säkerställer att systemen är uppdaterade. 
-                De övervakar också systemens prestanda och löser tekniska problem som kan uppstå..</p>
-        </div>
-        <div class="section">
-            <img src="{{ url_for('static', filename='images/analytics.jpg') }}" alt="Data Analytics">
-            <h3>Support och Helpdesk</h3>
-            <p>Supporttekniker erbjuder hjälp till kunder som har problem med hårdvara eller programvara. De ger vägledning via telefon, 
-                e-post eller fjärrsupport för att lösa användarens problem snabbt och effektivt.</p>
-        </div>
-        <div class="section">
-            <img src="{{ url_for('static', filename='images/teamwork.jpg') }}" alt="Collaboration">
-            <h3>Databashantering</h3>
-            <p>Tekniker som arbetar med molnlösningar hjälper företag att migrera sina tjänster till molnet. De erbjuder även support för 
-                molnbaserade applikationer och säkerställer att data är tillgänglig och säker..</p>
-        </div>
-        <div class="section">
-            <img src="{{ url_for('static', filename='images/tekni.png') }}" alt="Collaboration">
-            <h3>Webbutveckling</h3>
-            <p>IT-tekniker inom webbutveckling skapar och underhåller webbplatser. De arbetar med både front-end och back-end utveckling för att säkerställa en användarvänlig och funktionell webbupplevelse.</p>
-        </div>
-    </section>
-    <footer>
-        <p>&copy; 2024 Flex-IT. All Rights Reserved.</p>
-    </footer>
+{% extends "base.html" %}
 
-    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+{% block title %}Home - Flex-IT{% endblock %}
 
-</body>
-</html>
+{% block content %}
+<h1>Welcome to Flex-IT</h1>
+<p>Your trusted IT solutions partner!</p>
+{% endblock %}
